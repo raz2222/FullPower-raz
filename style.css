@@ -13,12 +13,30 @@ html {
   height: 1290px;
 }
 
+#slim {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100vw; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 999;
+}
+nav {
+  position: fixed !important;
+  top: 10;
+  width: 100vw;
+  transition: top 0.3s;
+  z-index: 999;
+}
 .slim-list {
   display: flex;
   flex-direction: row;
   height: 48px;
   background-color: #000000;
   direction: rtl;
+  padding-top: 12px;
+  padding-left: 0px;
+  margin: 0px;
+  width: 100vw;
 }
 
 .nav2 {
@@ -38,7 +56,41 @@ a {
   float: right;
   color: #ffffff;
 }
+.vl {
+  border-left: 1px solid #ffffff;
+  height: 21px;
+  padding-top: 5px;
+}
+.nav2 {
+  direction: rtl;
+  display: flex;
+  align-items: center; /* For vertical alignment */
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 97px;
+}
 
+.slim-list li {
+  background: transparent;
+  padding-left: 33px;
+  float: right;
+  color: #ffffff;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  align-content: center;
+}
+
+.slim-list a {
+  background: transparent;
+  padding-left: 15px;
+  float: right;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
 ul.menu-icon-list1 {
   display: inline;
 }
@@ -47,10 +99,19 @@ nav {
   height: 139px;
 }
 
+ul.navbar-nav {
+  margin-top: 81px;
+}
+a.active {
+  padding: 0px;
+}
+
 .navbar {
-  top: 0px;
-  left: 0px;
-  width: 1920px;
+  position: fixed;
+  top: 48px;
+  width: 100vw;
+  transition: top 0.3s;
+  z-index: 999;
   height: 139px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
@@ -58,8 +119,13 @@ nav {
   justify-content: space-between;
   text-align: center;
   padding-top: 0rem;
+  position: sticky;
 }
-
+#navbar {
+  z-index: 99;
+  padding-top: 93px;
+  position: fixed;
+}
 .navbar-nav {
   display: flex;
   flex-wrap: wrap; /* Optional. only if you want the items to wrap */
@@ -68,7 +134,6 @@ nav {
   text-decoration: none;
   list-style: none;
   margin-top: 97px;
-  padding-bottom: 14px;
   margin-left: 383px;
 }
 
@@ -95,6 +160,8 @@ a.nav-link {
 
 .nav-logo {
   left: 50%;
+  margin-top: 40px;
+  margin-bottom: 17px;
 }
 .main-nav-list {
   display: flex;
