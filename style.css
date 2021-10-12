@@ -249,6 +249,10 @@ a.nav-link {
   z-index: 99;
   padding: 0px;
 }
+
+.row.main {
+  margin-top: 186px;
+}
 .hero {
   top: -89px;
   left: 0px;
@@ -357,6 +361,7 @@ a.nav-link {
   background-color: transparent;
   margin-top: 49.17px;
   direction: rtl;
+  letter-spacing: 0.88px;
 }
 
 .icon-list1 {
@@ -856,10 +861,12 @@ input.inputText {
   .left-text {
     font-size: 16px;
     font-weight: 200;
-    margin-top: -5px;
+    margin-top: 0px;
     padding: 16px;
   }
-
+  .row.main {
+    margin-top: 0px;
+  }
   #text {
     font-weight: bold;
   }
